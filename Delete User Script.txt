@@ -7,3 +7,4 @@ read -p 'Enter The Username need to be delete: ' name
 deluser	 $name
 
 echo "User $name Has Been Created Successfully"
+
