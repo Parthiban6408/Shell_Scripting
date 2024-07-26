@@ -1,0 +1,11 @@
+#Script to Create Empty Files
+
+for i in {1..10}; do touch file_$i.txt; done
+
+#Command to change the modification date to 2 year older date of current date. 
+
+for i in {1..10}; do touch -d "$(date -d '2 years ago' +%Y-%m-%d)" file_$i.txt; done
+
+#Command to modify the single file to 2 year older date
+
+touch -d "$(date -d '2 years ago' +%Y-%m-%d)" FILENAME
